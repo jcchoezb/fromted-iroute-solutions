@@ -1,0 +1,37 @@
+{
+  "name": "react-example",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "next dev -p 3000",
+    "build": "next build",
+    "build:cf": "npx @opennextjs/cloudflare build",
+    "start": "next start -p 3000",
+    "lint": "next lint",
+    "build:worker": "npx @opennextjs/cloudflare build",
+    "dev:worker": "wrangler dev",
+    "preview": "npm run build:worker && npm run dev:worker",
+    "deploy": "wrangler deploy"
+  },
+  "dependencies": {
+    "@google/genai": "^2.4.0",
+    "@opennextjs/cloudflare": "^1.19.11",
+    "@tailwindcss/postcss": "^4.3.0",
+    "dotenv": "^17.2.3",
+    "lucide-react": "^0.546.0",
+    "motion": "^12.23.24",
+    "next": "^16.2.5",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "wrangler": "^4.95.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "@types/react": "19.2.15",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.4.40",
+    "tailwindcss": "^4.1.14",
+    "typescript": "~5.8.2"
+  }
+}
